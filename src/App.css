@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.heart {
+  color: #ff0000;
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+
+/* .title{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 10rem;
+}
+.number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+}*/
+
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #61dafb;
+  border-radius: 5px;
+}
+
+
+.general{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+
+/*.toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+} */
+
+
+/* .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid 1px black;
+  width:30vw;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  background: wheat;
+  height:10vw;
+  width:10vw;
+  font-size: 5vw;
+}
+.box:hover{
+  background-color: aquamarine;
+} */
+
+
+/* .img{
+  height: 25vw;
+  background-image: url("components/bmi/meter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: solid 1px black;
+  display: flex;
+}
+.bmi{
+  height: 3vw;
+  justify-content: center;
+  display: flex;
+}
+table,td,th{
+  border: solid 1px #282c34;
+}
+.tbl{
+  justify-content: center;
+  display: flex;
+  height: 3vw;
+} */
+
+/* .secret{
+  display: flex;
+  flex-direction: row;
+} */
+
+/* .alphabet{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1vw;
+} */

@@ -1,0 +1,207 @@
+*{
+    border: solid 1px black;
+}
+.start{
+    display: flex;
+    flex-flow: column wrap;
+    background-image: linear-gradient(#CAF4F4,#FFF2CC,white);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -10;
+}
+.bird1{
+    display: flex;
+    height: 1%;
+    width: auto;
+}
+.bird2{
+    display: flex;
+    height: 1%;
+    width: auto;
+}
+@keyframes sun {
+    0%   { left: 30%; bottom: -60%;}
+    100% { left: 16%; bottom: -40%;}
+}
+@keyframes leftCloud {
+    0%   {  left: -10vw; top: 0px;}
+    100% {  left: 15vw; top: 0px;}
+}
+@keyframes rightCloud {
+    0%   {  right: -10vw; top: 0px;}
+    100% {  right: 15vw; top: 0px;}
+}
+
+.sun{
+    display: flex;
+    height: 80vh;
+    width: auto;
+    position: relative;
+    bottom: -40%;
+    left: 16%;
+    z-index: -9;
+    animation: sun 3s;
+}
+.cloud_big{
+    display: flex;
+    height: 70vh;
+    width: auto;
+    position: relative;
+    animation: rightCloud 3s;
+    right: 15vw;
+    top: 0px;
+    z-index: -7;
+}
+.cloud_small{
+    display: flex;
+    height: 65vh;
+    width: auto;
+    position: relative;
+    animation: leftCloud 3s;
+    left: 15vw;
+    top: 0px;
+    z-index: -8;
+}
+.sun .cloud_big .cloud_small:hover{
+    transform: scaleZ(1.5);
+}
+.mointain1{
+    display: flex;
+    border-radius: 50%;
+    background-color: #A8E5B4;
+    position: relative;
+    bottom: -20%;
+    left: -20%;
+    height: 40vh;
+    width: 40vw;
+    z-index: -6;
+}
+.mointain2{
+    display: flex;
+    border-radius: 50%;
+    background-color: #75D588;
+    position: relative;
+    bottom: -20%;
+    right: 20%;
+    height: 40vh;
+    width: 40vw;
+    z-index: -5;
+}
+/* .mointainShade1{
+    height: 5vh;
+    width: 7vw;
+}
+.mointainShade2{
+
+} */
+/* .cloud{ 
+   margin-top:70px;
+   width:350px;
+   height:120px;
+   background:#ECEFF1;
+   box-shadow: 10px 10px rgba(0,0,0,0.2);
+   border-radius:100px;
+}
+.cloud::after, .cloud::before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+.cloud::after{
+    width:100px;
+    height:100px;
+    top:-220px;
+    left:50px;
+}
+.cloud::before{
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+} */
+.clouds_nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.background { 
+    width: 430px;
+    height: 480px; position: absolute;
+    transform: translate(-50%, -50%); left: 50%;
+    top: 50%;
+    }
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    }
+.shape:first-child {
+    background: linear-gradient(#1845ad, #23a2f6); left: -80px; top: -80px;
+    }
+form {
+    height: 500px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; Left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding :50px 35px;
+    }
+form * {
+    font-family: "Poppins", sans-serif; color: #ffffff; letter-spacing: 0.5px;
+    outline: none; border: none;
+    }
+form h3 { 
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px; 
+    text-align: center;
+    }        
+label {
+    display: block;
+    margin-top: 30px; font-size: 16px;
+    font-weight: 500;
+    } 
+input {
+    display: block;
+    margin-left: -9px;
+    height: 50px; 
+    width: 100%;
+    border-radius: 3px; 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.07); 
+    margin-top: 8px; 
+    font-size: 14px; 
+    font-weight: 300;
+}
+::placeholder {color: #e5e5e5;}
+.button {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff; 
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600; 
+    border-radius: 5px;
+    cursor: pointer;
+}
